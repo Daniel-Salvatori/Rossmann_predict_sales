@@ -94,11 +94,11 @@ Na primeira parte da etapa foi realizado a avaliação simples do modelo (Single
 
 | Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
-| Random Forest Regressor | 696.477809 | 0.103411 | 1029.574986 |
+| Random Forest Regressor | 679.598831 | 0.099913 | 1011.119437|
 | Average Model	 | 1354.800353 | 0.206400 | 1835.135542|
-| Linear Regression | 1868.313299|0.292392 | 2674.576594 |
+| Linear Regression | 1867.089774 |0.292694 | 2671.049215 |
 | Linear Regression - Lasso | 1891.704881 | 0.289106| 2744.451737 |
-| XGBoost Regressor | 6682.604070 | 0.949328 | 7329.887823 |
+| XGBoost Regressor | 6683.423528 | 0.949439 | 7330.693347 |
 
 
 Mesmo o modelo XGBoost nao performando com um resultado muito bom em primeiro momento, após a etapa de *Hyperparameter fine tuning* onde foram ajustados os parâmetros, o modelo apresentou bons resultados. A escolha deste modelo tambem foi baseada no tempo de processamento do algoritmo, que é muito menor que o Random Forest, significando redução de custos de processamento e cloud.
@@ -109,7 +109,7 @@ Mesmo o modelo XGBoost nao performando com um resultado muito bom em primeiro mo
 
 | Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
-| XGBoost Regressor | 632.810733 | 0.091442 | 921.441998 |
+| XGBoost Regressor | 650.631529 | 0.095503 | 944.394141 |
 
 # 6. Resultado Final
 
@@ -121,19 +121,19 @@ Com o modelo selecionado e treinado, as 5 melhores lojas apresentaram a performa
 
 | ID da Loja |     Previsões |  Pior Cenário | Melhor Cenário |       MAE |   MAPE |
 | :--------- | ------------: | ------------: | -------------: | --------: | -----: |
-| 258        | \$ 543.536,00 | \$ 543.043,79 |  \$ 544.028,20| \$ 492,20 | 0.0377 |
-| 732        | \$ 631.405,37 | \$ 630.688,45 |  \$ 632.122,29 | \$ 716,92 | 0.0487 |
-| 561       | \$ 734.331,18 | \$ 733.445,24 |  \$ 735.217,12 | \$ 885,94| 0.0513 |
-| 989       | \$ 230.974,42 | \$ 230.645,26 |  \$ 231.303,57 | \$ 329,15 | 0.0518 |
-| 1088        | \$ 391.805,59 | \$ 391.252,36 |  \$ 392.358,81 | \$ 553,22 | 0.0542 |
+| 258        | \$ 532.274,68 | \$ 531.697,52 |  \$ 532.851,84| \$ 577,16 | 0.0448 |
+| 989        | \$ 237.385,98 | \$ 237.099,80 |  \$ 237.672,16 | \$ 286,18 | 0.04449 |
+| 561       | \$ 748.898,56 | \$ 748.112,22 |  \$ 749.684,90 | \$ 786,33| 0.0473 |
+| 1088       | \$ 384.975,09 | \$ 384.461,06 |  \$ 385.489,12 | \$ 514,03 | 0.0491 |
+| 634        | \$ 212.896,73| \$ 212.605,94 |  \$ 213.187,52 | \$ 290,79 | 0.0527 |
 
 Como resultado final, temos os seguintes cenários:
 
 | Cenários       |    Valores        |
 | :------------- | ----------------: |
-| Previsão Feita | \$ 283.242.240,00 |
-| Pior Cenário   | \$ 282.532.641,95 |
-| Melhor Cenário | \$ 283.951.868,44 |
+| Previsão Feita | \$ 285.645.120,00 |
+| Pior Cenário   | \$ 284.915.711,74 |
+| Melhor Cenário | \$ 286.374.532,85 |
 
 # 7. Deploy
 
