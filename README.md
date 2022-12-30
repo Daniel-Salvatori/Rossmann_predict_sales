@@ -3,17 +3,17 @@
 
 ## 1. Problema de Negócio:
 
-A Rossmann é uma das maiores redes de drogarias da Europa. Atualmente possui mais de 56000 funcionarios em mais de 4000 lojas.
+A Rossmann é uma das maiores redes de drogarias da Europa. Atualmente possui mais de 56000 funcionários em mais de 4000 lojas.
 
-O CFO possui a necessidade de reformar as lojas da rede de farmácias, para melhorar a estrutura das lojas e atender melhor o público. Para tanto, ele necessita que os gerentes das lojas enviem a previsão de receita das próximas 6 semanas para que ele provisione o valor que será investido ppor cada loja no processo de reforma.
+O CFO pretende reformar as lojas da rede de farmácias com o intuito de atender melhor o público. Para tanto, ele necessita que os gerentes das lojas enviem a previsão de receita das próximas 6 semanas para que ele provisione o valor que será investido em cada loja no processo de reforma.
 
-Atualmente, esses valores são calculados de forma individual, sendo que cada gerente realiza a entrega dessa previsão. Como cada loja possui fatores distintos que influenciam em seus resultados, como promoções, competições por clientes, feriados, sazonalidade e etc, e os cálculos são feitos de forma manual, os resultados variam muito.
+Atualmente esses valores são calculados de forma individual, sendo que cada gerente realiza a entrega dessa previsão. Como cada loja possui fatores distintos que influenciam em seus resultados, como promoções, competições por clientes, feriados, sazonalidade e etc, e os cálculos são feitos de forma manual e os resultados variam muito.
 
-Dessa forma, a ideia deste projeto é auxiliar o CFO na tomada de decisão, provendo resultados das previsões de cada loja de forma automática, e possibilitando que o CFO consulte as previsões através de um Bot do aplicativo Telegram.
+Dessa forma, a ideia deste projeto é auxiliar o CFO na tomada de decisão, provendo resultados das previsões de cada loja de forma automática e possibilitando que o CFO consulte as previsões através de um Bot do aplicativo Telegram.
 
 ## 2. Descrição dos dados:
 
-Foi disponibilizada pela empresa os dados dentro da plataforma de competições de dados [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/overview). Os dados apresentam 1.017.209 registros das vendas realizadas pelas filias da empresa, contendo 18 características únicas para cada venda realizada conforme listado abaixo:
+Foi disponibilizada pela empresa os dados dentro da plataforma de competições de dados [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/overview). Os dados apresentam 1.017.209 registros das vendas realizadas pelas filiais da empresa, contendo 18 características únicas para cada venda realizada conforme listado abaixo:
 
 | Atributo                          | Descrição                                                                                                                                             |
 | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,7 +36,7 @@ Foi disponibilizada pela empresa os dados dentro da plataforma de competições 
 
 ## 3. Estratégia de Solução:
 
-Para desenvolvimento da solução utilizei um processo de modelagem chamado CRISP-DS. Sua natureza cíclica permite não só o refatoramento do código como também a formulação de outras hipóteses e melhora dos modelos ao longo de cada ciclo.
+Para desenvolvimento da solução utilizei um processo de modelagem chamado CRISP-DS. Sua natureza cíclica permite não só a refatoração do código como também a formulação de outras hipóteses e melhora dos modelos ao longo de cada ciclo.
 
 ![](img/ciclo_CRISP_DS.png)
 
@@ -50,15 +50,15 @@ Para desenvolvimento da solução utilizei um processo de modelagem chamado CRIS
 
 4. **Limpeza dos Dados:** Esta etapa tem como objetivo remover todo e qualquer dado que não seja relevante para o modelo, tomando o cuidado e entender bem o fenômeno que está sendo estudado para que não sejam removidos dados importantes para a modelagem do problema.
 
-5. **Exploração dos Dados:** Esta etapa tem como objetivo entender os dados e qual a relação entre eles. Normalmente, são criadas hipóteses que posteriormente serão validadas utilizando técnicas de análise de dados. É nessa etapa que sera criadas novas *features* que serão utilizadas na etapa de Modelagem de Dados.
+5. **Exploração dos Dados:** Esta etapa tem como objetivo entender os dados e qual a relação entre eles. Normalmente, são criadas hipóteses que posteriormente serão validadas utilizando técnicas de análise de dados. É nessa etapa que serão criadas novas *features* que serão utilizadas na etapa de Modelagem de Dados.
 
-6. **Modelagem dos Dados:** Esta etapa tem como objetivo preparar os dados para que eles sejam utilizados pelos algoritmos de Machine Learning. É nesta etapa que são feitos as transformações e *encodign* dos dados, a fim de facilitar o aprendizado do algoritmo utilizado.
+6. **Modelagem dos Dados:** Esta etapa tem como objetivo preparar os dados para que eles sejam utilizados pelos algoritmos de Machine Learning. É nesta etapa que são feitas as transformações e *encodign* dos dados, a fim de facilitar o aprendizado do algoritmo utilizado.
 
-7. **Machine Learning:** Esta etapa tem como objetivo selecionar e aplicar algoritmos de Machine Learning nos dados preparados nas etapas anteriores. Aqui tambem são selecionados os algoritmos e feito a comparação de performance enetre eles, para selecionar o algoritmos que melhor performou como algoritmo final.
+7. **Machine Learning:** Esta etapa tem como objetivo selecionar e aplicar algoritmos de Machine Learning nos dados preparados nas etapas anteriores. Aqui tambem são selecionados os algoritmos e feita a comparação de performance enetre eles, para selecionar o algoritmos que melhor performou como algoritmo final.
 
-8. **Avaliação do Algoritimo:** Esta etapa tem como objetivo verificar a performance do algoritmo selecionado na etapa anterior com os resultados atuais. Neste momento é feito a tradução da performance do algoritmo para perfomance de negócio. Ou seja, quanto a solução criada trará de retorno financeiro para a empresa. Caso a performance seja aceitável, o algoritmo é publicado e entra em produção, caso contrário o mesmo retorna para a etapa de entendimento de negócio para um novo ciclo, a fim de melhorar a performance da solução.
+8. **Avaliação do Algoritimo:** Esta etapa tem como objetivo verificar a performance do algoritmo selecionado na etapa anterior com os resultados atuais. Neste momento é feita a tradução da performance do algoritmo para perfomance de negócio. Ou seja, quanto a solução criada trará de retorno financeiro para a empresa. Caso a performance seja aceitável, o algoritmo é publicado e entra em produção, caso contrário o mesmo retorna para a etapa de entendimento de negócio para um novo ciclo, a fim de melhorar a performance da solução.
 
-9. **Modelo em produção:** Esta etapa tem como objetivo publicar o algoritmo selecionado, deixando publico e acessível para tomada de decisão.
+9. **Modelo em produção:** Esta etapa tem como objetivo publicar o algoritmo selecionado, deixando público e acessível para tomada de decisão.
 
 ## 4. EDA Insights
 
@@ -101,7 +101,7 @@ Na primeira parte da etapa foi realizado a avaliação simples do modelo (Single
 | XGBoost Regressor | 6683.423528 | 0.949439 | 7330.693347 |
 
 
-Mesmo o modelo XGBoost nao performando com um resultado muito bom em primeiro momento, após a etapa de *Hyperparameter fine tuning* onde foram ajustados os parâmetros, o modelo apresentou bons resultados. A escolha deste modelo tambem foi baseada no tempo de processamento do algoritmo, que é muito menor que o Random Forest, significando redução de custos de processamento e cloud.
+Mesmo o modelo XGBoost não performando com um resultado aceitável no primeiro momento, após a etapa de *Hyperparameter fine tuning* onde foram ajustados os parâmetros, o modelo apresentou bons resultados. A escolha deste modelo também foi baseada no tempo de processamento do algoritmo, que é muito menor que o Random Forest, significando redução de custos de processamento e cloud.
 
 
 ### Cross Validation Performance:
@@ -113,21 +113,11 @@ Mesmo o modelo XGBoost nao performando com um resultado muito bom em primeiro mo
 
 # 6. Resultado Final
 
-O resultado final foi muito satisfatório, apenas um pequeno grupo destoou na predição em relação aos demais e precisára de ajustes nos proximos ciclos. A maior parte das lojas tiveram o erro MAPE muito próximo do erro performado no modelo que foi de 9%.
+O resultado final foi muito satisfatório, apenas um pequeno grupo destoou na previsão em relação aos demais e precisára de ajustes nos proximos ciclos. A maior parte das lojas tiveram o erro MAPE muito próximo do erro performado no modelo que foi de 9%.
 
 ![](img/mape_x_store.png)
 
-Com o modelo selecionado e treinado, as 5 melhores lojas apresentaram a performance abaixo:
-
-| ID da Loja |     Previsões |  Pior Cenário | Melhor Cenário |       MAE |   MAPE |
-| :--------- | ------------: | ------------: | -------------: | --------: | -----: |
-| 258        | \$ 532.274,68 | \$ 531.697,52 |  \$ 532.851,84| \$ 577,16 | 0.0448 |
-| 989        | \$ 237.385,98 | \$ 237.099,80 |  \$ 237.672,16 | \$ 286,18 | 0.04449 |
-| 561       | \$ 748.898,56 | \$ 748.112,22 |  \$ 749.684,90 | \$ 786,33| 0.0473 |
-| 1088       | \$ 384.975,09 | \$ 384.461,06 |  \$ 385.489,12 | \$ 514,03 | 0.0491 |
-| 634        | \$ 212.896,73| \$ 212.605,94 |  \$ 213.187,52 | \$ 290,79 | 0.0527 |
-
-Como resultado final, temos os seguintes cenários:
+O resultado final do modelo, considerarando o pior e o melhor cenário, é o seguinte:
 
 | Cenários       |    Valores        |
 | :------------- | ----------------: |
@@ -136,6 +126,57 @@ Como resultado final, temos os seguintes cenários:
 | Melhor Cenário | \$ 286.374.532,85 |
 
 # 7. Deploy
+
+Conforme descrito no inicio do projeto, o deploy do modelo ficara disponivel via Telegram.
+
+Para ter acesso as previsões, basta seguir os passos abaixo:
+
+
+- Criar uma conta no Telegram;
+- Fazer o download do app Telegram em seu celular, ou utilizar o telegram web.
+
+Segue link para acesso do telegram Bot:
+
+[<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](https://t.me/rossmannbot_bot)
+
+Previsões em tempo real:
+
+- Enviar o número da loja que deseja receber a previsão de faturamento das próximas 6 semanas:
+
+![](img/telegram1.jpeg)
+
+Possíveis problemas:
+
+- Caso o número da loja nao esteja cadastrada na base de dados, o bot ira retornar com a mensagem 'Store not avaiable'
+
+- Caso sejam informados caracteres diferentes de números, o bot irá retornar com a mensagem 'Store ID invalid'
+
+![](img/telegram2.jpeg)
+
+Caso isso venha a ocorrer, informe novo número para consulta.
+
+![](img/telegram3.jpeg)
+
+
+#8. Conclusão
+
+O projeto foi entregue conforme o planejado. Os dados estão disponíveis e acessíveis em tempo real para que a informação ajude na melhor tomada de decisão.
+
+O deploy do modelo foi hospedado de forma **gratuita** na cloud do [Render](https://render.com/)
+
+Todas as etapas do projeto podem ser consultadas dentro deste repositório.
+
+#9. Próximos Passos
+
+- Iniciar um novo ciclo do **CRISP** e identificar possíveis melhorias.
+- Utilizar nova abordagem no tratamento de dados faltantes.
+- Investigar a razão de algumas lojas estarem com previsões acima do MAPE do modelo.
+- Criar novas features afim de melhorar a performance do modelo.
+- Disponibilizar os dados através de um aplicativo WEB, para que mais pessoas tenham acesso as previsões.
+- Treinar novos modelos de ML.
+
+
+
 
 
 
