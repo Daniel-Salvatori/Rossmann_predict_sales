@@ -158,7 +158,7 @@ Caso isso venha a ocorrer, informe novo número para consulta.
 ![](img/telegram3.jpeg)
 
 
-#8. Conclusão
+# 8. Conclusão
 
 O projeto foi entregue conforme o planejado. Os dados estão disponíveis e acessíveis em tempo real para que a informação ajude na melhor tomada de decisão.
 
@@ -166,7 +166,7 @@ O deploy do modelo foi hospedado de forma **gratuita** na cloud do [Render](http
 
 Todas as etapas do projeto podem ser consultadas dentro deste repositório.
 
-#9. Próximos Passos
+# 9. Próximos Passos
 
 - Iniciar um novo ciclo do **CRISP** e identificar possíveis melhorias.
 - Utilizar nova abordagem no tratamento de dados faltantes.
