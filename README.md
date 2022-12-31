@@ -5,11 +5,11 @@
 
 A Rossmann é uma das maiores redes de drogarias da Europa. Atualmente possui mais de 56000 funcionários em mais de 4000 lojas.
 
-O CFO pretende reformar as lojas da rede de farmácias com o intuito de atender melhor o público. Para tanto, ele necessita que os gerentes das lojas enviem a previsão de receita das próximas 6 semanas para que ele provisione o valor que será investido em cada loja no processo de reforma.
+O CFO da empresa pretende reformar as lojas da rede de farmácias com o intuito de atender seus clientes. Para tanto, ele necessita que os gerentes das lojas enviem a previsão de receita das próximas 6 semanas para que ele provisione o valor que será investido em cada loja no processo de reforma.
 
-Atualmente esses valores são calculados de forma individual, sendo que cada gerente realiza a entrega dessa previsão. Como cada loja possui fatores distintos que influenciam em seus resultados, como promoções, competições por clientes, feriados, sazonalidade e etc, e os cálculos são feitos de forma manual e os resultados variam muito.
+Atualmente esses valores são calculados de forma individual, sendo o gerente de cada loja o responsável pela entrega dessas previsões. As vendas de cada unidade são influenciadas por diversos fatores entre eles: promoções, localização, concorrência, sozonalidade. Isso faz com que os resultados sejam bastante variados, se tornando assim um grande desafio para a rede.
 
-Dessa forma, a ideia deste projeto é auxiliar o CFO na tomada de decisão, provendo resultados das previsões de cada loja de forma automática e possibilitando que o CFO consulte as previsões através de um Bot do aplicativo Telegram.
+Dessa forma, esse projeto tem como objetivo auxiliar o CFO na tomada de decisão, provendo as previsões de faturamento de cada loja de forma automática e possibilitando que o mesmo tenha acesso as previsões através de um Bot do aplicativo Telegram.
 
 ## 2. Descrição dos dados:
 
