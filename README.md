@@ -127,19 +127,19 @@ O resultado final do modelo, considerarando o pior e o melhor cenário, é o seg
 
 # 7. Deploy
 
-Conforme descrito no inicio do projeto, o deploy do modelo ficara disponivel via Telegram.
+Conforme descrito no inicio do projeto, o deploy do modelo ficará disponível via Telegram.
 
 Para ter acesso as previsões, basta seguir os passos abaixo:
 
 
 - Criar uma conta no Telegram;
-- Fazer o download do app Telegram em seu celular, ou utilizar o telegram web.
+- Fazer o download do app em seu celular, ou utilizar o Telegram web.
 
-Segue link para acesso do telegram Bot:
+Segue link para acesso do Telegram Bot:
 
 [<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](https://t.me/rossmannbot_bot)
 
-Previsões em tempo real:
+Previsões :
 
 - Enviar o número da loja que deseja receber a previsão de faturamento das próximas 6 semanas:
 
@@ -160,7 +160,7 @@ Caso isso venha a ocorrer, informe novo número para consulta.
 
 # 8. Conclusão
 
-O projeto foi entregue conforme o planejado. Os dados estão disponíveis e acessíveis em tempo real para que a informação ajude na melhor tomada de decisão.
+O projeto foi entregue conforme o planejado. Os dados estão disponíveis e acessíveis para que a informação ajude na melhor tomada de decisão.
 
 O deploy do modelo foi hospedado de forma **gratuita** na cloud do [Render](https://render.com/)
 
